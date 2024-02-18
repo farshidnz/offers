@@ -1,0 +1,139 @@
+[
+  {
+    "Key": "LOG_LEVEL",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "information"
+      }
+    ]
+  },
+  {
+    "Key": "minCapacity",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "1"
+      },
+      {
+        "Scope": "crperson|prelive|live",
+        "Value": "2"
+      }
+    ]
+  },
+  {
+    "Key": "desiredCount",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "1"
+      },
+      {
+        "Scope": "crperson|prelive|live",
+        "Value": "2"
+      }
+    ]
+  },
+  {
+    "Key": "DocDbUsernameSsmParam",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "${Secret:DocDbUsername}"
+      }
+    ]
+  },
+  {
+    "Key": "DocDbPasswordSsmParam",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "${Secret:DocDbPassword}"
+      }
+    ]
+  },
+  {
+    "Key": "ShopGoReadOnlyConnectionStringSsmParam",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "${Secret:ShopGoReadOnlyConnectionString}"
+      }
+    ]
+  },
+  {
+    "Key": "UnleashApiKeySsmParam",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "${Secret:UnleashApiKey}"
+      }
+    ]
+  },
+  {
+    "Key": "MerchantPreferencesPath",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "${SharedStorageGlobalPath}/MerchantList"
+      }
+    ]
+  },
+  {
+    "Key": "PopularStoreInfoTable",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "trending-stores-api-PopularStoresPublishFacade-17JZGKSW19WFD"
+      },
+      {
+        "Scope": "prelive|live",
+        "Value": "trending-stores-api-PopularStoresPublishFacade-FSDCA6UV2BIE"
+      }
+    ]
+  },
+  {
+    "Key": "MerchantHistoryArchiveHour",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "8"
+      },
+      {
+        "Scope": "prelive|live",
+        "Value": "3"
+      }
+    ]
+  },
+  {
+    "Key": "MerchantHistoryArchivePath",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "${SharedStorageEnvironmentPath}/Merchants"
+      }
+    ]
+  },
+  {
+    "Key": "UserPoolId",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "ap-southeast-2_9q6TXai99"
+      },
+      {
+        "Scope": "prelive|live",
+        "Value": "ap-southeast-2_vq7sN11Cr"
+      }
+    ]
+  },
+  {
+    "Key": "ConfigureDatabase",
+    "Values": [
+      {
+        "Scope": "*",
+        "Value": "true"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Offers
+  description: Serve offers to website, mobile, electronic marketing, etc
+spec:
+  type: service
+  owner: devs@cashrewards.com
+  lifecycle: production

@@ -1,0 +1,16 @@
+﻿<SolutionConfiguration>
+  <Settings>
+    <AllowParallelTestExecution>False</AllowParallelTestExecution>
+    <SolutionConfigured>True</SolutionConfigured>
+  </Settings>
+  <EngineModes>
+    <EngineMode>
+      <Name>Run impacted tests automatically (except integration and acceptance tests), others manually</Name>
+      <Settings>
+        <AlignOutOfDateStatusWithImpactStatus>True</AlignOutOfDateStatusWithImpactStatus>
+        <EngineModeColor>a255, r128, g128, b0</EngineModeColor>
+        <TestsToExecuteAutomatically>(IsImpacted AND DoesNotHaveCategory 'Integration' AND IsNotInProjectWithName 'Application.AcceptanceTests' AND IsNotInProjectWithName 'Application.IntegrationTests')</TestsToExecuteAutomatically>
+      </Settings>
+    </EngineMode>
+  </EngineModes>
+</SolutionConfiguration>
